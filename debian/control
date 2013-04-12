@@ -1,0 +1,34 @@
+Source: r-cran-knitr
+Section: gnu-r
+Priority: optional
+Maintainer: Charles Plessy <plessy@debian.org>
+Uploaders: Charles Plessy <plessy@debian.org>
+Build-Depends: debhelper (>= 9),
+               cdbs,
+               r-base-dev,
+               r-cran-evaluate (>= 0.4.3),
+               r-cran-formatR (>= 0.3-4),
+               r-cran-markdown (>= 0.4),
+               r-cran-testthat,
+               r-cran-r2swf (>= 0.4),
+               r-cran-rcurl
+Standards-Version: 3.9.4
+Vcs-Browser: TBD
+Vcs-Git: TBD
+Homepage: http://yihui.name/knitr/
+
+Package: r-cran-knitr
+Architecture: all
+Depends: ${R:Depends},
+         ${misc:Depends},
+         r-cran-evaluate (>= 0.4.3),
+         r-cran-formatR (>= 0.3-4),
+         r-cran-markdown (>= 0.4)
+Suggests: r-cran-testthat,
+          r-cran-r2swf (>= 0.4),
+          r-cran-rcurl
+Description: Elegant, flexible and fast dynamic report generation with R
+ General-purpose literate programming engine, with lightweight API's designed
+ to give users full control of the output without heavy coding work. It combines
+ many features into one package with slight tweaks motivated from my everyday
+ use of Sweave.
